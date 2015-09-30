@@ -1,0 +1,11 @@
+{
+  "name": "chart-sbet",
+  "version": "1.0.0",
+  "description": "Simple HTML5 Charts using the canvas element",
+  "homepage": "https://github.com/nnnick/Chart.js",
+  "author": "nnnick",
+  "main": [
+    "Chart.js"
+  ],
+  "dependencies": {}
+}
