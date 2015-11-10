@@ -779,6 +779,7 @@
 
 			if (window.devicePixelRatio) {
 				ctx.canvas.style.width = width + "px";
+        height = height + 14; // --Stratabet-- added for fitting the sub-info to graph
 				ctx.canvas.style.height = height + "px";
 				ctx.canvas.height = height * window.devicePixelRatio;
 				ctx.canvas.width = width * window.devicePixelRatio;
