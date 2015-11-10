@@ -174,8 +174,8 @@
         val2 = parseFloat(this.options.headerData[1][i]).toFixed(2);
         newArr.push({'title': data.labels[i], 'val1': val1, 'val2': val2});
       }
-      var team1 = data.datasets[0].label.slice(0,3).toUpperCase();
-      var team2 = data.datasets[1].label.slice(0,3).toUpperCase();
+      var team1 = !!this.options.nameAbbr[0] ? this.options.nameAbbr[0] : data.datasets[0].label.slice(0,3).toUpperCase();
+      var team2 = !!this.options.nameAbbr[1] ? this.options.nameAbbr[1] : data.datasets[1].label.slice(0,3).toUpperCase();
       /* specific for Stratabet */
 
       this.scale = new Chart.RadialScale({
